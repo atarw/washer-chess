@@ -7,3 +7,7 @@ The program also has a Java Swing-based custom GUI (with custom Look and Feel) m
 NOTE: Some parts of the application are unfinished, with some functionality such as opening and saving .pgn files (a way to store chess games on disk, for use outside the program).
 
 However, ALL features which are related to actually playing the game exist. In short, it's a good way to waste a few hours :)
+
+Below is a screenshot of the application:
+
+![Screenshot of chess engine](http://i.imgur.com/WsprAM6.png?1)
