@@ -45,8 +45,10 @@ public class MovePanel extends JPanel implements ActionListener {
   }
   
   private void nextMove () {
-    stateManager.makeMove (stateManager.getEngineMove (), true);
-    lookManager.repaint ();
+    if (stateManager.engineActive ()) {
+      stateManager.makeMove (stateManager.getEngineMove (), true);
+      lookManager.repaint ();
+    }
   }
   
   private void previousMove () {

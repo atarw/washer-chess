@@ -195,6 +195,6 @@ public class ChessFrame extends JFrame implements ActionListener {
     lookManager.configureUI ();
     configureWindow ();
     
-    //stateManager.setEngine (new WasherEngine (stateManager.getBoard ()));
+    stateManager.setEngine (new WasherEngine (stateManager.getBoard ()));
   }
 }
