@@ -136,8 +136,7 @@ public class ChessFrame extends JFrame implements ActionListener {
     
     addWindowListener(new WindowAdapter() {
       public void windowClosing(WindowEvent e) {
-        dispose ();
-        System.exit(0);
+        quitProgram ();
       }});
     
     JMenuBar bar = configureMenuBar ();

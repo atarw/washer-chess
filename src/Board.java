@@ -121,11 +121,17 @@ public class Board {
     Piece piece;
     Set <Ply> moveSet;
     
+    List <Ply> moves;
+    
     for (BoardEntry entry : getPieces (side).values ()) {//BLACK
       piece = entry.getPiece ();
       
-      moveSet = new HashSet <Ply> (piece.getLegalMoves (this, entry.getLocation ()));
-      table.put (entry.getLocation (), moveSet);
+      moves = piece.getLegalMoves (this, entry.getLocation ());
+      
+      if (moves != null) {
+        moveSet = new HashSet <Ply> (moves);
+        table.put (entry.getLocation (), moveSet);
+      }
     }
     
     List <Set <Ply>> values = new ArrayList <Set <Ply>> (table.values ());
@@ -301,48 +307,51 @@ public class Board {
   }
   
   public Board makeMove (Ply ply, boolean generateAttributes) {
-    Board copy = new Board (this);
-    Piece movedPiece = copy.getPieceAt (ply.getStart ());
-    
-    copy.setKWC (ply.getKWC ());
-    copy.setQWC (ply.getQWC ());
-    copy.setKBC (ply.getKBC ());
-    copy.setQBC (ply.getQBC ());
-    copy.setHalfmoveClock (ply.getHalfmoveClock ());
-    //((King) copy.getKing (copy.getSide ()).getPiece ()).setChecked (false); //should be impossible for your king to be in check after your turn
-    
-    if (ply.getType () == Utilities.CASTLE_MOVE) {
-      BoardEntry rookLocation = getCastleRook (ply);
-      copy.movePiece (rookLocation.getLocation (), getCastleRookEndLocation (ply), ply.getSide ());
+    if (ply != null) {
+      Board copy = new Board (this);
+      Piece movedPiece = copy.getPieceAt (ply.getStart ());
+      
+      copy.setKWC (ply.getKWC ());
+      copy.setQWC (ply.getQWC ());
+      copy.setKBC (ply.getKBC ());
+      copy.setQBC (ply.getQBC ());
+      copy.setHalfmoveClock (ply.getHalfmoveClock ());
+      //((King) copy.getKing (copy.getSide ()).getPiece ()).setChecked (false); //should be impossible for your king to be in check after your turn
+      
+      if (ply.getType () == Utilities.CASTLE_MOVE) {
+        BoardEntry rookLocation = getCastleRook (ply);
+        copy.movePiece (rookLocation.getLocation (), getCastleRookEndLocation (ply), ply.getSide ());
+      }
+      else if (ply.getType () != Utilities.NORMAL_MOVE) {
+        movedPiece = getPromotion (ply.getType ());
+      }
+      
+      copy.movePiece (ply.getStart (), ply.getEnd (), ply.getSide (), movedPiece);
+      
+      if (copy.isLocationAttacked (copy.getKing (copy.getSide ().opposite ()), copy.getSide ())) { //if the other player's king is attacked by this turn, set their king checked to true, else false
+        ((King) copy.getKing (copy.getSide ().opposite ()).getPiece ()).setChecked (true);
+      }
+      else {
+        ((King) copy.getKing (copy.getSide ().opposite ()).getPiece ()).setChecked (false);
+      }
+      
+      if (copy.isLocationAttacked (copy.getKing (copy.getSide ()), copy.getSide ().opposite ())) {
+        ((King) copy.getKing (copy.getSide ()).getPiece ()).setChecked (true); //should be impossible for your king to be in check after your turn
+      }
+      else {
+        ((King) copy.getKing (copy.getSide ()).getPiece ()).setChecked (false); //should be impossible for your king to be in check after your turn
+      }
+      
+      copy.flipSide (); //IMPORTANT
+      
+      if (generateAttributes) {
+        copy.generateLegalMoves ();
+        copy.generateOutcome ();
+      }
+      
+      return copy;
     }
-    else if (ply.getType () != Utilities.NORMAL_MOVE) {
-      movedPiece = getPromotion (ply.getType ());
-    }
-    
-    copy.movePiece (ply.getStart (), ply.getEnd (), ply.getSide (), movedPiece);
-    
-    if (copy.isLocationAttacked (copy.getKing (copy.getSide ().opposite ()), copy.getSide ())) { //if the other player's king is attacked by this turn, set their king checked to true, else false
-      ((King) copy.getKing (copy.getSide ().opposite ()).getPiece ()).setChecked (true);
-    }
-    else {
-      ((King) copy.getKing (copy.getSide ().opposite ()).getPiece ()).setChecked (false);
-    }
-    
-    if (copy.isLocationAttacked (copy.getKing (copy.getSide ()), copy.getSide ().opposite ())) {
-      ((King) copy.getKing (copy.getSide ()).getPiece ()).setChecked (true); //should be impossible for your king to be in check after your turn
-    }
-    else {
-      ((King) copy.getKing (copy.getSide ()).getPiece ()).setChecked (false); //should be impossible for your king to be in check after your turn
-    }
-    
-    copy.flipSide (); //IMPORTANT
-    
-    if (generateAttributes) {
-      copy.generateLegalMoves ();
-      copy.generateOutcome ();
-    }
-    
-    return copy;
+    return this;
   }
   
   private void movePiece (int start, int end, Side side, Piece piece) {

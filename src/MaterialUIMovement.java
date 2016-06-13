@@ -9,7 +9,8 @@ import java.awt.event.MouseListener;
 import java.awt.event.ActionListener;
 
 import java.util.List;
-import java.util.Hashtable;
+import java.util.Map;
+import java.util.HashMap;
 import java.util.ArrayList;
 
 public class MaterialUIMovement {
@@ -17,7 +18,7 @@ public class MaterialUIMovement {
   private Color fadeColor; // color to fade to
   private int steps; // number of steps to fade into fadeColor
   private int interval; // timer interval
-  private Hashtable <Color, List <Color>> backgroundColors = new Hashtable <Color, List <Color>> ();
+  private Map <Color, List <Color>> backgroundColors = new HashMap <Color, List <Color>> ();
   
   private List <Color> getColors (Color background)
   {

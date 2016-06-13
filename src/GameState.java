@@ -66,14 +66,16 @@ public class GameState {
   }
   
   public void makeMove (Ply ply, boolean generateAttributes) {
-    currentBoard = currentBoard.makeMove (ply, generateAttributes);
-    
-    if (generateAttributes) {
-      moves.addMove (ply);
+    if (ply != null) {
+      currentBoard = currentBoard.makeMove (ply, generateAttributes);
       
-      if (engineActive ()) {
-        engine.clearChosenMove ();
-        engine.getRoot ().setNode (new Node <Ply> (ply));
+      if (generateAttributes) {
+        moves.addMove (ply);
+        
+        if (engineActive ()) {
+          engine.clearChosenMove ();
+          engine.getRoot ().setNode (new Node <Ply> (ply));
+        }
       }
     }
     

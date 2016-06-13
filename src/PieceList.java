@@ -37,12 +37,17 @@ public class PieceList {
   }
   
   public void addEntry (BoardEntry entry) {
-    entries.put (new Integer (entry.getLocation ()), entry);
-    
-    if (entry.hasPiece () && entry.getPiece () instanceof King) {
-      king = entry;
+    if (entry != null) {
+      entries.put (new Integer (entry.getLocation ()), entry);
+      
+      if (entry.hasPiece ()) {
+        totalScore += entry.getPiece ().getEvaluation ();
+        
+        if (entry.getPiece () instanceof King) {
+          king = entry;
+        }
+      }
     }
-    totalScore += entry.getPiece ().getEvaluation ();
   }
   
   public void removeEntry (int location) {
