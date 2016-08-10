@@ -14,10 +14,12 @@ However, ALL features which are related to actually playing the game exist. In s
 
 # How to run this program
 
-Unfortunately, I haven't created a .jar or .exe for people to use yet (coming soon), but for now one can download the source code and run the .drjava file within in the application DrJava, and run the project from there.
+Unfortunately, I haven't created a .jar or .exe for people to use yet (coming soon), but for now one can download the source code, open the .drjava file within the application DrJava and run the project from there.
 
 # Future Updates
 
 My main focus right now is increasing the program's engine strength to make it even stronger.
+
 I will also add support for exporting and opening games as .pgn files.
+
 I am also trying to export my program as an .exe or .jar file, but this will probably happen after the above updates are finished.
