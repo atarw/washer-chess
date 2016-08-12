@@ -1,4 +1,4 @@
-# Chess Program - Atharva Washimkar
+# Washer - Atharva Washimkar
 
 This is a basic chess application made by me for fun (and because I really like chess) :) The application allows users to play a game of chess against another person, or against a basic chess engine that I coded to go with the program.
 
