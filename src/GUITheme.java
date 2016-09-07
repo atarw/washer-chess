@@ -4,11 +4,6 @@ import java.awt.Color;
 import javax.swing.border.Border;
 //import javax.swing.plaf.ColorUIResource;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.FileInputStream;
-import java.awt.FontFormatException;
-
 public class GUITheme {
 
   private Color inactiveTextbox, activeTextbox, textboxText;
@@ -23,12 +18,12 @@ public class GUITheme {
   private Border menuBorder = new DropShadowBorder (Color.BLACK, 0, 5, 0.3f, 12, true, true, true, true);
   private Border defaultBorder = new DropShadowBorder (Color.BLACK, 5, 5, 0.3f, 12, true, true, true, true);
 
-  private static final Font ITALIC = getFont ("Roboto-Italic.ttf");
-  private static final Font LIGHT = getFont ("Roboto-Light.ttf");
-  private static final Font BOLD = getFont ("Roboto-Medium.ttf");
-  private static final Font REGULAR = getFont ("Roboto-Regular.ttf");
-  private static final Font THIN = getFont ("Roboto-Thin.ttf");
-  private static final Font THIN_ITALIC = getFont ("RobotoCondensed-LightItalic.ttf");
+  private static final Font ITALIC = Utilities.getFont ("Roboto-Italic.ttf");
+  private static final Font LIGHT = Utilities.getFont ("Roboto-Light.ttf");
+  private static final Font BOLD = Utilities.getFont ("Roboto-Medium.ttf");
+  private static final Font REGULAR = Utilities.getFont ("Roboto-Regular.ttf");
+  private static final Font THIN = Utilities.getFont ("Roboto-Thin.ttf");
+  private static final Font THIN_ITALIC = Utilities.getFont ("RobotoCondensed-LightItalic.ttf");
 
   public static final GUITheme LIGHT_THEME = new GUITheme (new Color (230, 230, 230), new Color (220, 220, 220), Color.BLACK, Color.WHITE, Color.BLACK, new Color (230, 230, 230), new Color (0, 0, 0, 100),
                                                            new Color (33, 150, 243), Color.WHITE, new Color (240, 240, 240), Color.WHITE, new Color (245, 0, 87), new Color (255, 64, 129));
@@ -118,20 +113,6 @@ public class GUITheme {
 
   public Font getThinItalic () {
     return THIN_ITALIC;
-  }
-
-  private static Font getFont (String fileName) {
-    try {
-      return Font.createFont (Font.TRUETYPE_FONT, new FileInputStream (new File ("./resources/fonts/" + fileName))).deriveFont (14f);
-    }
-    catch (IOException e) {
-      System.out.println (fileName + " = null");
-      return null;
-    }
-    catch (FontFormatException e) {
-      System.out.println (fileName + " = null");
-      return null;
-    }
   }
 
   private GUITheme (Color inactiveTextbox, Color activeTextbox, Color textboxText, Color card, Color menuSelectionText, Color menuSelectionBackground,

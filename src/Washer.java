@@ -1,4 +1,4 @@
-public class ChessApp {
+public class Washer {
   
   public static void main (String [] args) {
     try {

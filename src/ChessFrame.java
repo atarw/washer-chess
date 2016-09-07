@@ -186,7 +186,7 @@ public class ChessFrame extends JFrame implements ActionListener {
   }
   
   public ChessFrame () {    
-    super ("Chess GUI");
+    super ("Washer - Chess GUI & Engine");
     
     stateManager = GameState.getInstance ();
     

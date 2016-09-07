@@ -1,8 +1,9 @@
 import javax.imageio.ImageIO;
 
+import java.awt.Font;
+import java.awt.FontFormatException;
 import java.awt.image.BufferedImage;
 
-import java.io.File;
 import java.io.IOException;
 
 public class Utilities {
@@ -26,9 +27,23 @@ public class Utilities {
   
   public static BufferedImage getImage (String fileName) {
     try {
-      return ImageIO.read (new File ("./resources/imgs/" + fileName));
+      return ImageIO.read (Utilities.class.getResourceAsStream ("/resources/imgs/" + fileName));
     }
     catch (IOException e) {
+      System.out.println (fileName + " = null");
+      return null;
+    }
+  }
+  
+  public static Font getFont (String fileName) {
+    try {
+      return Font.createFont (Font.TRUETYPE_FONT, Utilities.class.getResourceAsStream ("/resources/fonts/" + fileName)).deriveFont (14f);
+    }
+    catch (IOException e) {
+      System.out.println (fileName + " = null");
+      return null;
+    }
+    catch (FontFormatException e) {
       System.out.println (fileName + " = null");
       return null;
     }
