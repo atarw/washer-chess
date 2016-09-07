@@ -14,7 +14,7 @@ However, ALL features which are related to actually playing the game exist. In s
 
 # How to run this program
 
-Unfortunately, I haven't created a .jar or .exe for people to use yet (coming soon), but for now one can download the source code, open the .drjava file within the application DrJava and run the project from there.
+Download the `washer-chess.jar` file located in the repo above!
 
 # Future Updates
 
