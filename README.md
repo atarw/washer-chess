@@ -1,12 +1,12 @@
 # Washer - Atharva Washimkar
 
-This is a basic chess application made by me for fun (and because I really like chess) :) The application allows users to play a game of chess against another person, or against a basic chess engine that I coded to go with the program.
+This is a basic chess application made by me for fun (and because I really like chess) :) The application allows users to play a game of chess against another person, or against a basic chess washer.engine that I coded to go with the program.
 
-![Screenshot of chess engine](http://i.imgur.com/WsprAM6.png?1)
+![Screenshot of chess washer.engine](http://i.imgur.com/WsprAM6.png?1)
 
 The program has a Java Swing-based custom GUI (with custom Look and Feel) modelling Google's Material Design UI - something which I think is aesthetically appealing and could be reused in future projects.
 
-The program's engine is not very strong, although it can put up a fight :)
+The program's washer.engine is not very strong, although it can put up a fight :)
 
 NOTE: Some parts of the application are unfinished, with some functionality such as opening and saving .pgn files (a way to store chess games on disk, for use outside the program).
 
@@ -18,7 +18,7 @@ Download the `washer-chess.jar` file located in the repo above!
 
 # Future Updates
 
-My main focus right now is increasing the program's engine strength to make it even stronger.
+My main focus right now is increasing the program's washer.engine strength to make it even stronger.
 
 I will also add support for exporting and opening games as .pgn files.
 
