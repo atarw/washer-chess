@@ -48,7 +48,9 @@ public class BoardEntry {
 
 	@Override
 	public String toString () {
-		return "[byte: " + location + "           alg.notation: " + BoardEntry.toAlgebraicNotation (location) + "              rank: " + Board.getRank (location) + "             file: " + Board.getFile (location) + "                  valid: " + Board.isValidLocation (location) + "             piece: " + hasPiece () + "             " + piece + "\n]";
+		return "[byte: " + location + "           alg.notation: " + BoardEntry.toAlgebraicNotation (location) + "              rank: " + Board.getRank (location) + "             file: "
+				+ Board.getFile (location) + "                  valid: " + Board.isValidLocation (location)
+				+ "             piece: " + hasPiece () + "             " + piece + "\n]";
 	}
 
 	@Override
