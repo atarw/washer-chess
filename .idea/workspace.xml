@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37179850-5a1d-4d5c-b744-b6026bb7a4e3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/washer-chess.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/washer-chess.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/washer/game/PieceListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/washer/game/BoardEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/washer/game/BoardEntry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/washer/game/BoardEntryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/washer/game/BoardEntryTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,38 +27,47 @@
         <counts>
           <entry key="class" value="2" />
           <entry key="gitignore" value="1" />
-          <entry key="java" value="16" />
+          <entry key="java" value="36" />
           <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="16" />
+          <entry key="JAVA" value="36" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="843" />
+          <entry key="java" value="2135" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="843" />
+          <entry key="JAVA" value="2135" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5220049">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/washer/game/PieceList.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="221">
+                  <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/washer/game/BoardEntry.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-26">
-                  <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+                <state relative-caret-position="646">
+                  <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -65,26 +75,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/washer/pieces/Piece.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-187">
+                <state relative-caret-position="-442">
                   <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/washer/game/PieceList.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/washer/game/Board.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-646">
-                  <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
@@ -93,11 +85,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tests/washer/game/BoardEntryTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="379">
-                  <caret line="73" column="26" lean-forward="true" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
+                <state relative-caret-position="17">
+                  <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -105,11 +97,14 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/washer/game/GameState.java">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/tests/washer/game/PieceListTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
-                  <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+                <state relative-caret-position="260">
+                  <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -165,7 +160,9 @@
         <option value="$PROJECT_DIR$/src/washer/ui/GUITheme.java" />
         <option value="$PROJECT_DIR$/src/washer/ui/GUIState.java" />
         <option value="$PROJECT_DIR$/src/washer/game/BoardEntryTest.java" />
+        <option value="$PROJECT_DIR$/src/washer/game/BoardEntry.java" />
         <option value="$PROJECT_DIR$/tests/washer/game/BoardEntryTest.java" />
+        <option value="$PROJECT_DIR$/tests/washer/game/PieceListTest.java" />
       </list>
     </option>
   </component>
@@ -175,7 +172,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="833" />
     <option name="width" value="854" />
     <option name="height" value="1017" />
@@ -276,7 +273,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586127199307" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586138204167" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -291,16 +288,16 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="washer.game" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/washer/ui" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/resources" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/washer/ui" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -315,7 +312,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BoardEntryTest.test_equals3">
+  <component name="RunManager" selected="JUnit.PieceListTest.test_size">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -340,7 +337,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BoardEntryTest.test_Equals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BoardEntryTest.test_equals1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="washer-chess" />
       <extension name="coverage">
         <pattern>
@@ -350,24 +347,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="washer.game" />
       <option name="MAIN_CLASS_NAME" value="washer.game.BoardEntryTest" />
-      <option name="METHOD_NAME" value="test_Equals" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BoardEntryTest.test_equals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="washer-chess" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="washer.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="washer.game" />
-      <option name="MAIN_CLASS_NAME" value="washer.game.BoardEntryTest" />
-      <option name="METHOD_NAME" value="test_equals" />
+      <option name="METHOD_NAME" value="test_equals1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -391,7 +371,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BoardEntryTest.test_getPiece_identity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PieceListTest.test_getKing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="washer-chess" />
       <extension name="coverage">
         <pattern>
@@ -400,15 +380,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="washer.game" />
-      <option name="MAIN_CLASS_NAME" value="washer.game.BoardEntryTest" />
-      <option name="METHOD_NAME" value="test_getPiece_identity" />
+      <option name="MAIN_CLASS_NAME" value="washer.game.PieceListTest" />
+      <option name="METHOD_NAME" value="test_getKing" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BoardEntryTest.test_removePiece" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PieceListTest.test_size" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="washer-chess" />
       <extension name="coverage">
         <pattern>
@@ -417,8 +397,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="washer.game" />
-      <option name="MAIN_CLASS_NAME" value="washer.game.BoardEntryTest" />
-      <option name="METHOD_NAME" value="test_removePiece" />
+      <option name="MAIN_CLASS_NAME" value="washer.game.PieceListTest" />
+      <option name="METHOD_NAME" value="test_size" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PieceListTest.test_size_is_zero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="washer-chess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="washer.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="washer.game" />
+      <option name="MAIN_CLASS_NAME" value="washer.game.PieceListTest" />
+      <option name="METHOD_NAME" value="test_size_is_zero" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -450,19 +447,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.BoardEntryTest.test_equals" />
-      <item itemvalue="JUnit.BoardEntryTest.test_getPiece_identity" />
-      <item itemvalue="JUnit.BoardEntryTest.test_removePiece" />
-      <item itemvalue="JUnit.BoardEntryTest.test_Equals" />
       <item itemvalue="JUnit.BoardEntryTest.test_equals3" />
+      <item itemvalue="JUnit.BoardEntryTest.test_equals1" />
+      <item itemvalue="JUnit.PieceListTest.test_size" />
+      <item itemvalue="JUnit.PieceListTest.test_size_is_zero" />
+      <item itemvalue="JUnit.PieceListTest.test_getKing" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PieceListTest.test_size" />
+        <item itemvalue="JUnit.PieceListTest.test_getKing" />
+        <item itemvalue="JUnit.PieceListTest.test_size_is_zero" />
+        <item itemvalue="JUnit.BoardEntryTest.test_equals1" />
         <item itemvalue="JUnit.BoardEntryTest.test_equals3" />
-        <item itemvalue="JUnit.BoardEntryTest.test_Equals" />
-        <item itemvalue="JUnit.BoardEntryTest.test_equals" />
-        <item itemvalue="JUnit.BoardEntryTest.test_removePiece" />
-        <item itemvalue="JUnit.BoardEntryTest.test_getPiece_identity" />
       </list>
     </recent_temporary>
   </component>
@@ -479,35 +476,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BoardEntryTest_test_equals - 2020.04.05 at 15h 34m 03s.xml">
-      <configuration name="BoardEntryTest.test_equals" configurationId="JUnit" />
+    <history-entry file="PieceListTest_test_size - 2020.04.05 at 17h 38m 05s.xml">
+      <configuration name="PieceListTest.test_size" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardEntryTest_test_equals - 2020.04.05 at 15h 34m 30s.xml">
-      <configuration name="BoardEntryTest.test_equals" configurationId="JUnit" />
+    <history-entry file="PieceListTest_test_size - 2020.04.05 at 17h 39m 04s.xml">
+      <configuration name="PieceListTest.test_size" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardEntryTest_test_Equals - 2020.04.05 at 15h 36m 58s.xml">
-      <configuration name="BoardEntryTest.test_Equals" configurationId="JUnit" />
+    <history-entry file="PieceListTest_test_size - 2020.04.05 at 17h 40m 33s.xml">
+      <configuration name="PieceListTest.test_size" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardEntryTest_test_Equals - 2020.04.05 at 15h 37m 15s.xml">
-      <configuration name="BoardEntryTest.test_Equals" configurationId="JUnit" />
+    <history-entry file="PieceListTest_test_size - 2020.04.05 at 17h 40m 48s.xml">
+      <configuration name="PieceListTest.test_size" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardEntryTest_test_Equals - 2020.04.05 at 15h 38m 24s.xml">
-      <configuration name="BoardEntryTest.test_Equals" configurationId="JUnit" />
+    <history-entry file="PieceListTest_test_size_is_zero - 2020.04.05 at 17h 45m 05s.xml">
+      <configuration name="PieceListTest.test_size_is_zero" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardEntryTest_test_equals3 - 2020.04.05 at 15h 40m 26s.xml">
-      <configuration name="BoardEntryTest.test_equals3" configurationId="JUnit" />
+    <history-entry file="PieceListTest_test_size - 2020.04.05 at 17h 46m 24s.xml">
+      <configuration name="PieceListTest.test_size" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardEntryTest_test_equals3 - 2020.04.05 at 15h 47m 17s.xml">
-      <configuration name="BoardEntryTest.test_equals3" configurationId="JUnit" />
+    <history-entry file="PieceListTest_test_getKing - 2020.04.05 at 18h 16m 42s.xml">
+      <configuration name="PieceListTest.test_getKing" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardEntryTest_test_equals3 - 2020.04.05 at 15h 48m 50s.xml">
-      <configuration name="BoardEntryTest.test_equals3" configurationId="JUnit" />
+    <history-entry file="PieceListTest_test_size - 2020.04.05 at 18h 37m 54s.xml">
+      <configuration name="PieceListTest.test_size" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardEntryTest_test_equals3 - 2020.04.05 at 15h 49m 26s.xml">
-      <configuration name="BoardEntryTest.test_equals3" configurationId="JUnit" />
+    <history-entry file="PieceListTest_test_size - 2020.04.05 at 18h 48m 50s.xml">
+      <configuration name="PieceListTest.test_size" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardEntryTest_test_equals3 - 2020.04.05 at 15h 51m 17s.xml">
-      <configuration name="BoardEntryTest.test_equals3" configurationId="JUnit" />
+    <history-entry file="PieceListTest_test_size - 2020.04.05 at 18h 49m 07s.xml">
+      <configuration name="PieceListTest.test_size" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -523,7 +520,7 @@
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2555012" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25427872" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -532,17 +529,17 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.43829787" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49816626" visible="true" weight="0.3281075" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49755502" visible="true" weight="0.3281075" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32922733" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50183374" side_tool="true" visible="true" weight="0.3281075" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.502445" side_tool="true" visible="true" weight="0.3281075" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49938875" weight="0.3281075" />
       <window_info anchor="bottom" id="Application Servers" order="10" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49938875" weight="0.3281075" />
-      <window_info anchor="bottom" id="Statistic" order="12" sideWeight="0.49938875" weight="0.32922733" />
+      <window_info anchor="bottom" id="Statistic" order="12" sideWeight="0.4987775" weight="0.32922733" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -593,27 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/washer/game/MoveList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/washer/game/BoardArrayFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/washer/game/PieceListFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -679,13 +655,6 @@
           <folding>
             <element signature="imports" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/washer/game/MovePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -792,31 +761,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/washer/game/Outcome.java">
+    <entry file="file://$PROJECT_DIR$/src/washer/game/BoardArrayFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/washer/game/PieceList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <caret line="2" column="27" lean-forward="true" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/washer/game/GameState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="-442">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/washer/pieces/Piece.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -827,17 +782,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/washer/game/BoardEntry.java">
+    <entry file="file://$PROJECT_DIR$/src/washer/game/MovePanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-26">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        <state relative-caret-position="-485">
+          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/washer/game/Outcome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/washer/game/MoveList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/washer/game/PieceListFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/washer/game/BoardEntryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="73" column="26" lean-forward="true" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
+        <state relative-caret-position="17">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/washer/pieces/Piece.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-442">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/washer/game/BoardEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/washer/game/PieceList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/washer/game/PieceListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

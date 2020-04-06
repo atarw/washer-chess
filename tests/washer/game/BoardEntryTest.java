@@ -13,27 +13,30 @@ import static org.junit.Assert.*;
 
 public class BoardEntryTest {
 
+    /*Creating mock objects for Piece */
     @Mock
     Piece piece;
-
     @Mock
     Object entry;
 
-
+    //Rule to allow Mockito run with Junit
     @Rule public MockitoRule rule = MockitoJUnit.rule();
 
+    //Testing the location item by sending a fixed integer
     @Test
     public void test_BoardEntry(){
         BoardEntry boardEntry = new BoardEntry(5);
         assertEquals(5,boardEntry.getLocation());
     }
 
+    //Testing second constructor of BoardEntry
     @Test
     public void test_getPiece(){
         BoardEntry boardEntry = new BoardEntry(0,null);
         assertEquals(null,boardEntry.getPiece());
     }
 
+    //Testing getIdentity of Piece class by mocking piece object
     @Test
     public void test_getPiece_identity(){
         when(piece.getIdentity()).thenReturn(2);
@@ -41,6 +44,7 @@ public class BoardEntryTest {
         verify(piece).getIdentity();
     }
 
+    //Testing the location method
     @Test
     public void test_location(){
         BoardEntry boardEntry = new BoardEntry(5,piece);
@@ -53,6 +57,7 @@ public class BoardEntryTest {
         assertFalse(boardEntry.hasPiece());
     }
 
+    //Expected to throw error when wrong object is passed for testing
     @Test (expected = ClassCastException.class)
     public void test_equals1(){
         BoardEntry boardEntry = new BoardEntry(5,piece);
@@ -61,6 +66,7 @@ public class BoardEntryTest {
             verify(entry).equals(entry);
     }
 
+    //Testing the equal method using the mock object generated
     @Test
     public void test_equals2(){
         BoardEntry boardEntry = new BoardEntry(5,piece);
@@ -73,6 +79,5 @@ public class BoardEntryTest {
         boolean check = boardEntry.equals(boardEntry);
         assertTrue(check);
     }
-
 
 }
